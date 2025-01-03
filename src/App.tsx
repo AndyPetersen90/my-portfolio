@@ -3,7 +3,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <h1>Andrew is currently in Development!</h1>
+      <h1>Andrew's portfolio is currently in Development!</h1>
     </>
   );
 }
