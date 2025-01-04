@@ -1,10 +1,17 @@
-import "./App.css";
-
+import AboutSection from "./components/About";
+import HomeSection from "./components/Home";
+import NavBar from "./components/Navbar";
+import ProjectsSection from "./components/Projects";
+import TechStackSection from "./components/TechStack";
 function App() {
   return (
-    <>
-      <h1>Andrew's portfolio is currently in Development!</h1>
-    </>
+    <div>
+      <NavBar />
+      <HomeSection />
+      <AboutSection />
+      <TechStackSection />
+      <ProjectsSection />
+    </div>
   );
 }
 
