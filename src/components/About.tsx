@@ -29,16 +29,55 @@ function AboutSection() {
     "./aboutMePhotos/me-dax-tyson.jpg",
     "./aboutMePhotos/me-and-alexis.jpg",
   ];
+  // const settings = {
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 750,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 3500,
+  //   centerMode: true,
+  //   focusOnSelect: true,
+  // };
+
   const settings = {
     dots: false,
     infinite: true,
     speed: 750,
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3500,
     centerMode: true,
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 2000,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 1500,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 620,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false, // Disable centering on smaller screens
+        },
+      },
+    ],
   };
 
   return (
@@ -70,11 +109,11 @@ function AboutSection() {
         </div>
       </div>
       {/* Carousel Section */}
-      <div className="flex flex-col justify-center pb-16 px-16">
+      <div className="flex flex-col justify-center pb-16 px-8 md:px-16">
         <Slider {...settings}>
           {photos.map((photo, index) => (
-            <div className="px-2" key={index}>
-              <img src={photo} alt="Image 1" className="w-full h-[20vh] object-cover rounded-lg" />
+            <div className="px-2 flex items-center justify-center" key={index}>
+              <img src={photo} alt={`Slide ${index}`} className="w-auto h-[50vh] max-h-[60vh] sm:max-h-[40vh] object-contain rounded-lg mx-auto" />
             </div>
           ))}
         </Slider>
