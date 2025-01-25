@@ -7,13 +7,19 @@ function TechStackSection() {
     dots: false,
     infinite: true,
     speed: 750,
-    slidesToShow: 8,
+    slidesToShow: 10,
     slidesToScroll: 1,
     centerMode: true,
     focusOnSelect: true,
     responsive: [
       {
-        breakpoint: 1280,
+        breakpoint: 1800,
+        settings: {
+          slidesToShow: 8,
+        },
+      },
+      {
+        breakpoint: 1350,
         settings: {
           slidesToShow: 6,
         },
@@ -25,7 +31,7 @@ function TechStackSection() {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 800,
         settings: {
           slidesToShow: 4,
         },
