@@ -11,6 +11,10 @@ function ProjectsSection() {
               alt="KPNailGeek Website Demo Screenshot"
             />
           </a>
+          <p className="text-[1em] text-[#333] text-center mb-[1rem]">
+            This was my first ever website. It was my mid bootcamp project. It was designed to be a simple website displaying my wifes nail tech
+            business, pricing, and portfolio work.
+          </p>
         </div>
 
         <div className="border border-[#ccc] rounded-lg p-[2rem] bg-[#f9f9f9] hover:bg-[#e0e0e0] hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out">
@@ -22,6 +26,9 @@ function ProjectsSection() {
               alt="Random Quote Generator Screenshot"
             />
           </a>
+          <p className="text-[1em] text-[#333] text-center mb-[1rem]">
+            This was a simple website to generate random quotes. I used this project to practice using React and API calls.
+          </p>
         </div>
 
         <div className="border border-[#ccc] rounded-lg p-[2rem] bg-[#f9f9f9] hover:bg-[#e0e0e0] hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out">
@@ -29,18 +36,55 @@ function ProjectsSection() {
           <a href="https://react-exercises-web-app.netlify.app/" target="_blank">
             <img className="w-full h-[200px] object-cover rounded-lg mb-[1rem]" src="./exercises-web-app.png" alt="Exercises Web App Screenshot" />
           </a>
+          <p className="text-[1em] text-[#333] text-center mb-[1rem]">
+            This was another practice website. I built this in react as well as using a third party API to get the exercise data.
+          </p>
         </div>
 
-        {/* <div className="border border-[#ccc] rounded-lg p-[2rem] bg-[#f9f9f9] hover:bg-[#e0e0e0] hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out">
-          <h3 className="text-[1.5em] text-[#333] text-center mb-[1rem]">Specs Capstone Project</h3>
-          <a href="https://fes-movie-collection.herokuapp.com/" target="_blank">
+        <div className="border border-[#ccc] rounded-lg p-[2rem] bg-[#f9f9f9] hover:bg-[#e0e0e0] hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out">
+          <h3 className="text-[1.5em] text-[#333] text-center mb-[1rem]">DevMountain Capstone Project</h3>
+          <a href="https://www.youtube.com/watch?v=vQob0MA61MM" target="_blank">
             <img
               className="w-full h-[200px] object-cover rounded-lg mb-[1rem]"
               src="./specs-capstone-screenshot.png"
               alt="Specs Capstone Project Screenshot"
             />
           </a>
-        </div> */}
+          <p className="text-[1em] text-[#333] text-center mb-[1rem]">
+            This was my final project for DevMountain. Currently it is down for updates and moving to a new hosting service.
+          </p>
+        </div>
+
+        <div className="border border-[#ccc] rounded-lg p-[2rem] bg-[#f9f9f9] hover:bg-[#e0e0e0] hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out">
+          <h3 className="text-[1.5em] text-[#333] text-center mb-[1rem]">Sunrebel Info Page (Previous Role)</h3>
+          <a href="https://www.sunrebel.com/" target="_blank">
+            <img
+              className="w-full h-[200px] object-cover rounded-lg mb-[1rem]"
+              src="./sunrebel-proposals-image.png"
+              alt="Sunrebel Company Static Page"
+            />
+          </a>
+          <p className="text-[1em] text-[#333] text-center mb-[1rem]">
+            This is the main landing page for the company I previously worked at. This will go over what the web app was designed to do and how it was
+            used.
+          </p>
+        </div>
+
+        <div className="border border-[#ccc] rounded-lg p-[2rem] bg-[#f9f9f9] hover:bg-[#e0e0e0] hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out">
+          <h3 className="text-[1.5em] text-[#333] text-center mb-[1rem]">Past Work at Sunrebel</h3>
+          <a href="https://www.youtube.com/playlist?list=PLlFtToxLwJR73Ewb-pY2kPb0RQsUpGNB3" target="_blank">
+            <img
+              className="w-full h-[200px] object-cover rounded-lg mb-[1rem]"
+              src="./sunrebel-proposals-image.png"
+              alt="Sunrebel Company Static Page"
+            />
+          </a>
+          <p className="text-[1em] text-[#333] text-center mb-[1rem]">
+            This is a link to a youtube playlist of some short screen recordings I made of some of the projects I completed while working at Sunrebel.
+            <br />
+            There are many more, but due to the nature of the code, I am not able to record those.
+          </p>
+        </div>
       </div>
     </section>
   );
