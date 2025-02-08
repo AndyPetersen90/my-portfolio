@@ -100,6 +100,21 @@ function ProjectsSection() {
             lighting. The page has great info, simple design, and two options to contact the owner.
           </p>
         </div>
+
+        <div className="border border-[#ccc] rounded-lg p-[2rem] bg-[#f9f9f9] hover:bg-[#e0e0e0] hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out">
+          <h3 className="text-[1.5em] text-[#333] text-center mb-[1rem]">Word Removal Game</h3>
+          <a href="https://word-removal-game.netlify.app/" target="_blank">
+            <img
+              className="w-full h-[200px] object-cover rounded-lg mb-[1rem]"
+              src="./word-remover-game-screenshot.png"
+              alt="All Season Lighting Static Page"
+            />
+          </a>
+          <p className="text-[1em] text-[#333] text-center mb-[1rem]">
+            In my church, I help lead the children in singing religious music. I built this quick little website to allow me to easily test the kids
+            memory by progressively removing the words to any song they are learning.
+          </p>
+        </div>
       </div>
     </section>
   );
