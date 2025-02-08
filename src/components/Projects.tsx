@@ -18,6 +18,20 @@ function ProjectsSection() {
         </div>
 
         <div className="border border-[#ccc] rounded-lg p-[2rem] bg-[#f9f9f9] hover:bg-[#e0e0e0] hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out">
+          <h3 className="text-[1.5em] text-[#333] text-center mb-[1rem]">DevMountain Capstone Project</h3>
+          <a href="https://www.youtube.com/watch?v=vQob0MA61MM" target="_blank">
+            <img
+              className="w-full h-[200px] object-cover rounded-lg mb-[1rem]"
+              src="./specs-capstone-screenshot.png"
+              alt="Specs Capstone Project Screenshot"
+            />
+          </a>
+          <p className="text-[1em] text-[#333] text-center mb-[1rem]">
+            This was my final project for DevMountain. Currently it is down for updates and moving to a new hosting service.
+          </p>
+        </div>
+
+        <div className="border border-[#ccc] rounded-lg p-[2rem] bg-[#f9f9f9] hover:bg-[#e0e0e0] hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out">
           <h3 className="text-[1.5em] text-[#333] text-center mb-[1rem]">Random Quote Generator</h3>
           <a href="https://andrews-react-quote-generator.netlify.app/" target="_blank">
             <img
@@ -38,20 +52,6 @@ function ProjectsSection() {
           </a>
           <p className="text-[1em] text-[#333] text-center mb-[1rem]">
             This was another practice website. I built this in react as well as using a third party API to get the exercise data.
-          </p>
-        </div>
-
-        <div className="border border-[#ccc] rounded-lg p-[2rem] bg-[#f9f9f9] hover:bg-[#e0e0e0] hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out">
-          <h3 className="text-[1.5em] text-[#333] text-center mb-[1rem]">DevMountain Capstone Project</h3>
-          <a href="https://www.youtube.com/watch?v=vQob0MA61MM" target="_blank">
-            <img
-              className="w-full h-[200px] object-cover rounded-lg mb-[1rem]"
-              src="./specs-capstone-screenshot.png"
-              alt="Specs Capstone Project Screenshot"
-            />
-          </a>
-          <p className="text-[1em] text-[#333] text-center mb-[1rem]">
-            This was my final project for DevMountain. Currently it is down for updates and moving to a new hosting service.
           </p>
         </div>
 
@@ -83,6 +83,21 @@ function ProjectsSection() {
             This is a link to a youtube playlist of some short screen recordings I made of some of the projects I completed while working at Sunrebel.
             <br />
             There are many more, but due to the nature of the code, I am not able to record those.
+          </p>
+        </div>
+
+        <div className="border border-[#ccc] rounded-lg p-[2rem] bg-[#f9f9f9] hover:bg-[#e0e0e0] hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out">
+          <h3 className="text-[1.5em] text-[#333] text-center mb-[1rem]">All Season Lighting</h3>
+          <a href="https://www.allseasonlighting.com/" target="_blank">
+            <img
+              className="w-full h-[200px] object-cover rounded-lg mb-[1rem]"
+              src="./all-season-lighting-screenshot.png"
+              alt="All Season Lighting Static Page"
+            />
+          </a>
+          <p className="text-[1em] text-[#333] text-center mb-[1rem]">
+            Helped build a static page for a former coworker. It's a simple page displaying some of his companies past work installing permanent
+            lighting. The page has great info, simple design, and two options to contact the owner.
           </p>
         </div>
       </div>

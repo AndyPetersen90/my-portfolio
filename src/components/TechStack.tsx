@@ -9,7 +9,9 @@ function TechStackSection() {
     speed: 750,
     slidesToShow: 10,
     slidesToScroll: 1,
+    autoplay: true,
     centerMode: true,
+    autoplaySpeed: 3500,
     focusOnSelect: true,
     responsive: [
       {

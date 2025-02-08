@@ -29,17 +29,6 @@ function AboutSection() {
     "./aboutMePhotos/me-dax-tyson.jpg",
     "./aboutMePhotos/me-and-alexis.jpg",
   ];
-  // const settings = {
-  //   dots: false,
-  //   infinite: true,
-  //   speed: 750,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 3500,
-  //   centerMode: true,
-  //   focusOnSelect: true,
-  // };
 
   const settings = {
     dots: false,
@@ -74,7 +63,7 @@ function AboutSection() {
         breakpoint: 620,
         settings: {
           slidesToShow: 1,
-          centerMode: false, // Disable centering on smaller screens
+          centerMode: false,
         },
       },
     ],
@@ -108,7 +97,6 @@ function AboutSection() {
           </p>
         </div>
       </div>
-      {/* Carousel Section */}
       <div className="flex flex-col justify-center pb-16 px-8 md:px-16">
         <Slider {...settings}>
           {photos.map((photo, index) => (
