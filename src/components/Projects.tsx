@@ -27,7 +27,10 @@ function ProjectsSection() {
             />
           </a>
           <p className="text-[1em] text-[#333] text-center mb-[1rem]">
-            This was my final project for DevMountain. Currently it is down for updates and moving to a new hosting service.
+            This was my final project for DevMountain. This project was my first use of an API. The API allowed me to search for movie titles with a
+            search function. I could then paginate if necessary. Additionally I designed this website to allow for storing a list of movies I already
+            own, and movies I would like to own. <br />
+            <br /> Currently it is down for updates and moving to a new hosting service.
           </p>
         </div>
 
@@ -96,8 +99,10 @@ function ProjectsSection() {
             />
           </a>
           <p className="text-[1em] text-[#333] text-center mb-[1rem]">
-            Helped build a static page for a former coworker. It's a simple page displaying some of his companies past work installing permanent
-            lighting. The page has great info, simple design, and two options to contact the owner.
+            Helped build a static page for a former coworker. This is static page for a company that offers perminent lighting solutions for homes.
+            This is designed with a few images of past work as well as a option for people to request quotes or request to partner to be a seller of
+            the lights. Both of these forms use an AWS lamda function to send the requests to the company's email. This project was fun as I got to
+            use Astro and practice building a static page with serverside and clientside rendering.
           </p>
         </div>
 
@@ -112,7 +117,24 @@ function ProjectsSection() {
           </a>
           <p className="text-[1em] text-[#333] text-center mb-[1rem]">
             In my church, I help lead the children in singing religious music. I built this quick little website to allow me to easily test the kids
-            memory by progressively removing the words to any song they are learning.
+            memory by progressively removing the words to any song they are learning. This was a fun and quick project to build. I was able to play
+            with custom fond sizing and global themes with Tailwind.
+          </p>
+        </div>
+        <div className="border border-[#ccc] rounded-lg p-[2rem] bg-[#f9f9f9] hover:bg-[#e0e0e0] hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out">
+          <h3 className="text-[1.5em] text-[#333] text-center mb-[1rem]">Word Fishing Game</h3>
+          <a href="https://word-fishing.netlify.app/" target="_blank">
+            <img
+              className="w-full h-[200px] object-cover rounded-lg mb-[1rem]"
+              src="./word-fishing-game-image.png"
+              alt="All Season Lighting Static Page"
+            />
+          </a>
+          <p className="text-[1em] text-[#333] text-center mb-[1rem]">
+            In my church, I help lead the children in singing religious music. I built this quick little word fishing game. Its a simple game that is
+            based on Hangman, but more kid friendly. When a letter is guessed and it is part of the word, the letter is shown in the word as well as
+            the fist moves closer to the fisherman. This was a prett simple project, but it was fun to be able to work with animations and CSS to make
+            it look nice.
           </p>
         </div>
       </div>
