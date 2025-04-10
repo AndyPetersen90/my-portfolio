@@ -1,7 +1,7 @@
 function ResumeSection() {
   return (
     <section id="resume-section" className="bg-white text-black p-8">
-      <h3 className="text-center text-2xl font-bold mb-4">Resume</h3>
+      <h2 className="text-center text-3xl font-bold mb-4">Resume</h2>
       <p className="text-center text-lg mb-8">Interested in learning more about my professional experience? View my full resume below:</p>
       <div className="text-center">
         <a

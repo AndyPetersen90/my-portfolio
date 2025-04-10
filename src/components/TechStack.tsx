@@ -100,19 +100,23 @@ function TechStackSection() {
       url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
       className: "bg-white rounded-lg",
     },
-    {
-      name: "Postman",
-      url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
-    },
+    // {
+    //   name: "Postman",
+    //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+    // },
     {
       name: "Material UI",
       url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg",
+    },
+    {
+      name: "Tailwind",
+      url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" ,
     },
   ];
 
   return (
     <section className="bg-black" id="tech-stack-section">
-      <h2 className="pt-[4vh] text-aliceblue text-center text-2xl mb-4">Tech Stack</h2>
+      <h2 className="pt-[4vh] text-aliceblue text-center text-3xl mb-4">Tech Stack</h2>
       <div className="flex flex-col justify-center pb-16 px-8 md:px-16">
         <Slider {...settings}>
           {icons.map((icon, index) => (

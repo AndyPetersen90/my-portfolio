@@ -1,7 +1,7 @@
 function HomeSection() {
   return (
     <section
-      className="min-h-screen bg-cover bg-center relative"
+      className="min-h-[80vh] bg-cover bg-center relative"
       style={{
         backgroundImage: "url('background1.jpeg')",
         backgroundSize: "cover",
