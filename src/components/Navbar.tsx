@@ -67,7 +67,7 @@ const NavBar: React.FC = () => {
           {menuOpen ? <X size={32} /> : <Menu size={32} />}
         </button>
 
-        <div className="hidden md:flex justify-between w-full max-w-4xl space-x-10">
+        <div className="hidden md:flex justify-evenly w-full space-x-10">
           {navLinks.map(({ href, label }) => (
             <a
               key={href}

@@ -1,7 +1,7 @@
 function HomeSection() {
   return (
     <section
-      className="min-h-screen dark relative"
+      className="dark relative"
       style={{
         backgroundImage: "url('background1.jpeg')",
         backgroundSize: "cover",
@@ -9,7 +9,7 @@ function HomeSection() {
       }}
       id="home-section"
     >
-      <div className="flex flex-col items-center justify-center h-screen">
+      <div className="flex flex-col items-center justify-center h-[75vh]">
         <img className="w-[15%] md:w-[20%] sm:w-[30%]" src="Logo-White.jpeg" alt="Andrew Petersen's Logo" />
 
         <h1

@@ -17,7 +17,7 @@ function App() {
       <div className="relative">
         <NavBar />
         <main>
-          <section id="home-section" className="min-h-screen dark">
+          <section id="home-section" className="dark">
             <HomeSection />
           </section>
           <section id="tech-stack-section" className="dark">

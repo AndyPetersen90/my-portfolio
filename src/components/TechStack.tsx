@@ -110,18 +110,18 @@ function TechStackSection() {
     },
     {
       name: "Tailwind",
-      url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" ,
+      url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     },
   ];
 
   return (
     <section className="bg-black" id="tech-stack-section">
-      <h2 className="pt-[4vh] text-aliceblue text-center text-3xl mb-4">Tech Stack</h2>
+      <h2 className="pt-[6vh] text-aliceblue text-center text-4xl mb-6">Tech Stack</h2>
       <div className="flex flex-col justify-center pb-16 px-8 md:px-16">
         <Slider {...settings}>
           {icons.map((icon, index) => (
-            <div className="px-4" key={index}>
-              <img id="devicon" alt={icon.name} src={icon.url} className={`max-w-[100px] mx-auto ${icon.className || ""}`} />
+            <div className="px-6" key={index}>
+              <img id="devicon" alt={icon.name} src={icon.url} className={`max-w-[140px] mx-auto ${icon.className || ""}`} />
             </div>
           ))}
         </Slider>
