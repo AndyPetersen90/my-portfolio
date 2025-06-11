@@ -1,7 +1,7 @@
 function HomeSection() {
   return (
     <section
-      className="min-h-[80vh] bg-cover bg-center relative"
+      className="min-h-screen dark relative"
       style={{
         backgroundImage: "url('background1.jpeg')",
         backgroundSize: "cover",
@@ -9,11 +9,11 @@ function HomeSection() {
       }}
       id="home-section"
     >
-      <div className="mb-[20%] md:mb-[15%] sm:mb-[10%]">
-        <img className="block mx-auto w-[15%] md:w-[20%] sm:w-[30%] pt-[10vh]" src="Logo-White.jpeg" alt="Logo" />
+      <div className="flex flex-col items-center justify-center h-screen">
+        <img className="w-[15%] md:w-[20%] sm:w-[30%]" src="Logo-White.jpeg" alt="Andrew Petersen's Logo" />
 
         <h1
-          className="text-center mt-[4%] mb-0 pb-0 max-w-[90%] mx-auto break-words transform scale-[0.94] animate-[scale_4s_cubic-bezier(0.40,_1,_0.5,_1)_forwards]"
+          className="text-white text-center mt-[2%] mb-0 pb-0 max-w-[90%] mx-auto break-words transform scale-[0.94] animate-[scale_6s_cubic-bezier(0.40,_1,_0.5,_1)_forwards]"
           style={{
             fontSize: "clamp(3rem, 8vw, 8rem)",
             lineHeight: "1.2",
@@ -23,7 +23,7 @@ function HomeSection() {
         </h1>
 
         <h2
-          className="text-center mb-0 pt-[5%] max-w-[90%] mx-auto break-words leading-tight"
+          className="text-white/90 text-center mb-0 pt-[3%] max-w-[90%] mx-auto break-words leading-tight"
           style={{
             fontSize: "clamp(2rem, 6vw, 4.5rem)",
             lineHeight: "1.2",

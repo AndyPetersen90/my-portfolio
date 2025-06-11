@@ -8,7 +8,8 @@ function ResumeSection() {
           href="https://docs.google.com/document/d/1lp6trdtLPqfmoypVgaip5I1YE-JgXyStnUJ1HXzLXIM/edit?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-6 py-3 bg-black text-white rounded-lg hover:bg-blue-700 transition"
+          className="inline-block px-6 py-3 bg-black !text-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
+          style={{ color: "white" }}
         >
           View My Resume
         </a>
