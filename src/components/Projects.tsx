@@ -21,7 +21,7 @@ function ProjectsSection() {
                 </h3>
                 <img
                   className="w-full h-[180px] sm:h-[200px] md:h-[220px] object-cover rounded-lg mb-4 transition-all duration-300 group-hover:scale-110 group-hover:blur-3xl border-2 border-gray-300 shadow-md"
-                  src="./asl-quote-screenshot.png"
+                  src="./asl-quote-screenshot.webp"
                   alt="All Season Lighting Static Page"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -55,7 +55,7 @@ function ProjectsSection() {
                 </h3>
                 <img
                   className="w-full h-[180px] sm:h-[200px] md:h-[220px] object-cover rounded-lg mb-4 transition-all duration-300 group-hover:scale-110 group-hover:blur-3xl border-2 border-gray-300 shadow-md"
-                  src="./word-fishing-game-image.png"
+                  src="./word-fishing-game-image.webp"
                   alt="Word Fishing Game Screenshot"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -87,7 +87,7 @@ function ProjectsSection() {
                 </h3>
                 <img
                   className="w-full h-[180px] sm:h-[200px] md:h-[220px] object-cover rounded-lg mb-4 transition-all duration-300 group-hover:scale-110 group-hover:blur-3xl border-2 border-gray-300 shadow-md"
-                  src="./word-remover-game-screenshot.png"
+                  src="./word-remover-game-screenshot.webp"
                   alt="Word Remover Game Screenshot"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -118,7 +118,7 @@ function ProjectsSection() {
                 </h3>
                 <img
                   className="w-full h-[180px] sm:h-[200px] md:h-[220px] object-cover rounded-lg mb-4 transition-all duration-300 group-hover:scale-110 group-hover:blur-3xl border-2 border-gray-300 shadow-md"
-                  src="./all-season-lighting-screenshot.png"
+                  src="./all-season-lighting-screenshot.webp"
                   alt="All Season Lighting Static Page"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -152,7 +152,7 @@ function ProjectsSection() {
                 </h3>
                 <img
                   className="w-full h-[180px] sm:h-[200px] md:h-[220px] object-cover rounded-lg mb-4 transition-all duration-300 group-hover:scale-110 group-hover:blur-3xl border-2 border-gray-300 shadow-md"
-                  src="./sunrebel-proposals-image.png"
+                  src="./sunrebel-proposals-image.webp"
                   alt="Sunrebel Company Static Page"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -186,7 +186,7 @@ function ProjectsSection() {
                 </h3>
                 <img
                   className="w-full h-[180px] sm:h-[200px] md:h-[220px] object-cover rounded-lg mb-4 transition-all duration-300 group-hover:scale-110 group-hover:blur-3xl border-2 border-gray-300 shadow-md"
-                  src="./exercises-web-app.png"
+                  src="./exercises-web-app.webp"
                   alt="Exercises Web App Screenshot"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -215,7 +215,7 @@ function ProjectsSection() {
                 </h3>
                 <img
                   className="w-full h-[180px] sm:h-[200px] md:h-[220px] object-cover rounded-lg mb-4 transition-all duration-300 group-hover:scale-110 group-hover:blur-3xl border-2 border-gray-300 shadow-md"
-                  src="./Screen Shot 2022-06-29 at 4.53.33 PM.png"
+                  src="./Screen Shot 2022-06-29 at 4.53.33 PM.webp"
                   alt="Random Quote Generator Screenshot"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -244,7 +244,7 @@ function ProjectsSection() {
                 </h3>
                 <img
                   className="w-full h-[180px] sm:h-[200px] md:h-[220px] object-cover rounded-lg mb-4 transition-all duration-300 group-hover:scale-110 group-hover:blur-3xl border-2 border-gray-300 shadow-md"
-                  src="./specs-capstone-screenshot.png"
+                  src="./specs-capstone-screenshot.webp"
                   alt="Specs Capstone Project Screenshot"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -278,7 +278,7 @@ function ProjectsSection() {
                 </h3>
                 <img
                   className="w-full h-[180px] sm:h-[200px] md:h-[220px] object-cover rounded-lg mb-4 transition-all duration-300 group-hover:scale-110 group-hover:blur-3xl border-2 border-gray-300 shadow-md"
-                  src="./kpnailgeek-demo-screenshot.png"
+                  src="./kpnailgeek-demo-screenshot.webp"
                   alt="KPNailGeek Website Demo Screenshot"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -302,7 +302,7 @@ function ProjectsSection() {
                 <a href="https://www.sunrebel.com/" target="_blank">
                   <img
                     className="w-full h-[200px] object-cover rounded-lg mb-[1rem]"
-                    src="./sunrebel-proposals-image.png"
+                    src="./sunrebel-proposals-image.webp"
                     alt="Sunrebel Company Static Page"
                   />
                 </a>

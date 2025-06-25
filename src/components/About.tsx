@@ -4,30 +4,28 @@ import "slick-carousel/slick/slick-theme.css";
 
 function AboutSection() {
   const photos = [
-    "./aboutMePhotos/4th-july-fam.jpg",
-    "./aboutMePhotos/20230315_152739.jpg",
-    "./aboutMePhotos/20240517_171135.jpg",
-    "./aboutMePhotos/Tyson-me-fishing.jpeg",
-    "./aboutMePhotos/Sky-Dive.jpeg",
-    "./aboutMePhotos/boys-camping.jpg",
-    "./aboutMePhotos/cancun-ocean-fam.jpg",
-    "./aboutMePhotos/fam-halloween-2022.jpg",
-    "./aboutMePhotos/fam-halloween.jpg",
-    "./aboutMePhotos/fam-pumpkin-drop.jpg",
-    "./aboutMePhotos/family-archway-photo.jpg",
-    "./aboutMePhotos/hardrock-sign.jpg",
-    "./aboutMePhotos/Hiking-tyson-me.jpeg",
-    "./aboutMePhotos/HQ3A2177.jpg",
-    "./aboutMePhotos/me-and-tyson-shooting.jpg",
-    "./aboutMePhotos/me-coding.jpg",
-    "./aboutMePhotos/me-dax-hiking.jpg",
-    "./aboutMePhotos/me-ziplining.jpg",
-    "./aboutMePhotos/tyson-w-rocket.jpg",
-    "./aboutMePhotos/rocket-launch-station.jpg",
-    "./aboutMePhotos/tyson-robotics.jpg",
-    "./aboutMePhotos/tyson-trout.jpg",
-    "./aboutMePhotos/me-dax-tyson.jpg",
-    "./aboutMePhotos/me-and-alexis.jpg",
+    { source: "./aboutMePhotos/4th-july-fam.webp", alt: "4th of July Fam" },
+    { source: "./aboutMePhotos/20230315_152739.webp", alt: "Baby Announcement" },
+    { source: "./aboutMePhotos/20240517_171135.webp", alt: "Cancun Poolside" },
+    { source: "./aboutMePhotos/Tyson-me-fishing.webp", alt: "Tyson and Me fishing" },
+    { source: "./aboutMePhotos/Sky-Dive.webp", alt: "Me Sky Diving" },
+    { source: "./aboutMePhotos/boys-camping.webp", alt: "Boys and Cousins Camping" },
+    { source: "./aboutMePhotos/cancun-ocean-fam.webp", alt: "Family at the Ocean in Cancun" },
+    { source: "./aboutMePhotos/fam-halloween.webp", alt: "Family Halloween Costumes" },
+    { source: "./aboutMePhotos/fam-pumpkin-drop.webp", alt: "Family at the Pumpkin Drop" },
+    { source: "./aboutMePhotos/family-archway-photo.webp", alt: "Family in Moab Photo" },
+    { source: "./aboutMePhotos/hardrock-sign.webp", alt: "Family at the Hardrock Cancun Sign" },
+    { source: "./aboutMePhotos/Hiking-tyson-me.webp", alt: "Me and Tyson Hiking" },
+    { source: "./aboutMePhotos/me-and-tyson-shooting.webp", alt: "Me and Tyson Shooting" },
+    { source: "./aboutMePhotos/me-coding.webp", alt: "Me Writing Coding" },
+    { source: "./aboutMePhotos/me-dax-hiking.webp", alt: "Me and Dax hiking" },
+    { source: "./aboutMePhotos/me-ziplining.webp", alt: "Me ziplining" },
+    { source: "./aboutMePhotos/tyson-w-rocket.webp", alt: "Tyson with his model rocket" },
+    { source: "./aboutMePhotos/rocket-launch-station.webp", alt: "Homemade rocket launch station" },
+    { source: "./aboutMePhotos/tyson-robotics.webp", alt: "tyson playing with robots" },
+    { source: "./aboutMePhotos/tyson-trout.webp", alt: "tyson with his first trout catch" },
+    { source: "./aboutMePhotos/me-dax-tyson.webp", alt: "me dax tyson at the river" },
+    { source: "./aboutMePhotos/me-and-alexis.webp", alt: "me scratching my dogs head on a car ride." },
   ];
 
   const settings = {
@@ -94,7 +92,11 @@ function AboutSection() {
         <Slider {...settings}>
           {photos.map((photo, index) => (
             <div className="px-2 flex items-center justify-center" key={index}>
-              <img src={photo} alt={`Slide ${index}`} className="w-auto h-[50vh] max-h-[60vh] sm:max-h-[40vh] object-contain rounded-lg mx-auto" />
+              <img
+                src={photo.source}
+                alt={`Slide ${photo.alt}`}
+                className="w-auto h-[50vh] max-h-[60vh] sm:max-h-[40vh] object-contain rounded-lg mx-auto"
+              />
             </div>
           ))}
         </Slider>
