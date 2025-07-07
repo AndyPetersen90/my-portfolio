@@ -32,7 +32,9 @@ function HomeSection() {
           Andrew M. Petersen
         </h1>
 
-        <h2 className="text-white/90 text-center mb-0 pt-[3%] max-w-[90%] mx-auto break-words leading-tight hero-subtitle">Software Engineer</h2>
+        <h2 className="text-white/90 text-center mb-0 pt-[3%] max-w-[90%] mx-auto break-words leading-tight hero-subtitle">
+          Full-Stack Software Engineer
+        </h2>
       </div>
     </section>
   );
