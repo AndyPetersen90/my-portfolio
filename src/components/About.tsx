@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -9,30 +9,32 @@ function AboutSection() {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
-  const photos = [
-    { source: "./aboutMePhotos/4th-july-fam.webp", alt: "4th of July Fam" },
-    { source: "./aboutMePhotos/20230315_152739.webp", alt: "Baby Announcement" },
-    { source: "./aboutMePhotos/20240517_171135.webp", alt: "Cancun Poolside" },
-    { source: "./aboutMePhotos/Tyson-me-fishing.webp", alt: "Tyson and Me fishing" },
-    { source: "./aboutMePhotos/Sky-Dive.webp", alt: "Me Sky Diving" },
-    { source: "./aboutMePhotos/boys-camping.webp", alt: "Boys and Cousins Camping" },
-    { source: "./aboutMePhotos/cancun-ocean-fam.webp", alt: "Family at the Ocean in Cancun" },
-    { source: "./aboutMePhotos/fam-halloween.webp", alt: "Family Halloween Costumes" },
-    { source: "./aboutMePhotos/fam-pumpkin-drop.webp", alt: "Family at the Pumpkin Drop" },
-    { source: "./aboutMePhotos/family-archway-photo.webp", alt: "Family in Moab Photo" },
-    { source: "./aboutMePhotos/hardrock-sign.webp", alt: "Family at the Hardrock Cancun Sign" },
-    { source: "./aboutMePhotos/Hiking-tyson-me.webp", alt: "Me and Tyson Hiking" },
-    { source: "./aboutMePhotos/me-and-tyson-shooting.webp", alt: "Me and Tyson Shooting" },
-    { source: "./aboutMePhotos/me-coding.webp", alt: "Me Writing Coding" },
-    { source: "./aboutMePhotos/me-dax-hiking.webp", alt: "Me and Dax hiking" },
-    { source: "./aboutMePhotos/me-ziplining.webp", alt: "Me ziplining" },
-    { source: "./aboutMePhotos/tyson-w-rocket.", alt: "Tyson with his model rocket" },
-    { source: "./aboutMePhotos/rocket-launch-station.webp", alt: "Homemade rocket launch station" },
-    { source: "./aboutMePhotos/tyson-robotics.webp", alt: "tyson playing with robots" },
-    { source: "./aboutMePhotos/tyson-trout.webp", alt: "tyson with his first trout catch" },
-    { source: "./aboutMePhotos/me-dax-tyson.webp", alt: "me dax tyson at the river" },
-    { source: "./aboutMePhotos/me-and-alexis.webp", alt: "me scratching my dogs head on a car ride." },
-  ];
+  const photos = useMemo(() => {
+    return [
+      { source: "./aboutMePhotos/4th-july-fam.webp", alt: "4th of July Fam" },
+      { source: "./aboutMePhotos/20230315_152739.webp", alt: "Baby Announcement" },
+      { source: "./aboutMePhotos/20240517_171135.webp", alt: "Cancun Poolside" },
+      { source: "./aboutMePhotos/Tyson-me-fishing.webp", alt: "Tyson and Me fishing" },
+      { source: "./aboutMePhotos/Sky-Dive.webp", alt: "Me Sky Diving" },
+      { source: "./aboutMePhotos/boys-camping.webp", alt: "Boys and Cousins Camping" },
+      { source: "./aboutMePhotos/cancun-ocean-fam.webp", alt: "Family at the Ocean in Cancun" },
+      { source: "./aboutMePhotos/fam-halloween.webp", alt: "Family Halloween Costumes" },
+      { source: "./aboutMePhotos/fam-pumpkin-drop.webp", alt: "Family at the Pumpkin Drop" },
+      { source: "./aboutMePhotos/family-archway-photo.webp", alt: "Family in Moab Photo" },
+      { source: "./aboutMePhotos/hardrock-sign.webp", alt: "Family at the Hardrock Cancun Sign" },
+      { source: "./aboutMePhotos/Hiking-tyson-me.webp", alt: "Me and Tyson Hiking" },
+      { source: "./aboutMePhotos/me-and-tyson-shooting.webp", alt: "Me and Tyson Shooting" },
+      { source: "./aboutMePhotos/me-coding.webp", alt: "Me Writing Coding" },
+      { source: "./aboutMePhotos/me-dax-hiking.webp", alt: "Me and Dax hiking" },
+      { source: "./aboutMePhotos/me-ziplining.webp", alt: "Me ziplining" },
+      { source: "./aboutMePhotos/tyson-w-rocket.", alt: "Tyson with his model rocket" },
+      { source: "./aboutMePhotos/rocket-launch-station.webp", alt: "Homemade rocket launch station" },
+      { source: "./aboutMePhotos/tyson-robotics.webp", alt: "tyson playing with robots" },
+      { source: "./aboutMePhotos/tyson-trout.webp", alt: "tyson with his first trout catch" },
+      { source: "./aboutMePhotos/me-dax-tyson.webp", alt: "me dax tyson at the river" },
+      { source: "./aboutMePhotos/me-and-alexis.webp", alt: "me scratching my dogs head on a car ride." },
+    ];
+  }, []);
 
   // Intersection Observer to only load images when section is visible
   useEffect(() => {
@@ -70,7 +72,7 @@ function AboutSection() {
       };
       img.src = photo.source;
     });
-  }, [isVisible]);
+  }, [isVisible, photos]);
 
   const settings = {
     dots: false,
