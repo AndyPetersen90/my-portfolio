@@ -1,4 +1,17 @@
 {
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.andrewmpetersen.com"
+        }
+      ],
+      "destination": "https://andrewmpetersen.com/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
@@ -24,4 +37,4 @@
       ]
     }
   ]
-} 
+}

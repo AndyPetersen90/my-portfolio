@@ -19,22 +19,48 @@ function HomeSection() {
       {/* Loading overlay with better performance */}
       {!backgroundLoaded && <div className="absolute inset-0 bg-gradient-to-br from-blue-900 to-blue-600 animate-pulse" />}
 
-      <div className="flex flex-col items-center justify-center h-[75vh] relative z-10">
+      <div className="absolute inset-0 bg-black/60" />
+
+      <div className="flex min-h-[90vh] flex-col items-center justify-center px-6 py-24 text-center relative z-10">
         <img
-          className="w-[15%] md:w-[20%] sm:w-[30%] logo-image"
+          className="mb-8 w-24 sm:w-28 md:w-32 logo-image"
           src="/Logo-White.webp"
           alt="Andrew Petersen's Logo"
           loading="eager"
           decoding="async"
         />
 
-        <h1 className="text-white text-center mt-[2%] mb-0 pb-0 max-w-[90%] mx-auto break-words transform scale-[0.94] animate-[scale_6s_cubic-bezier(0.40,_1,_0.5,_1)_forwards] hero-title">
+        <p className="mb-4 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium uppercase tracking-[0.25em] text-blue-100">
+          Full-Stack Software Engineer
+        </p>
+
+        <h1 className="text-white text-center mb-6 max-w-5xl mx-auto break-words transform scale-[0.94] animate-[scale_6s_cubic-bezier(0.40,_1,_0.5,_1)_forwards] hero-title">
           Andrew M. Petersen
         </h1>
 
-        <h2 className="text-white/90 text-center mb-0 pt-[3%] max-w-[90%] mx-auto break-words leading-tight hero-subtitle">
-          Full-Stack Software Engineer
+        <h2 className="text-white/95 text-center mb-6 max-w-4xl mx-auto break-words leading-tight text-3xl sm:text-4xl md:text-5xl font-semibold">
+          I build practical web apps and internal tools that help people work faster.
         </h2>
+
+        <p className="mb-10 max-w-2xl text-lg leading-8 text-white/80">
+          I focus on clean user experiences, dependable features, and software that solves real business problems instead of just looking good in a
+          screenshot.
+        </p>
+
+        <div className="flex flex-col gap-4 sm:flex-row">
+          <a
+            href="#project-section"
+            className="rounded-lg bg-blue-500 px-7 py-3 font-semibold text-white shadow-lg shadow-blue-500/25 hover:bg-blue-400"
+          >
+            View Featured Work
+          </a>
+          <a
+            href="#contact-section"
+            className="rounded-lg border border-white/30 bg-white/10 px-7 py-3 font-semibold text-white hover:bg-white/20"
+          >
+            Contact Me
+          </a>
+        </div>
       </div>
     </section>
   );

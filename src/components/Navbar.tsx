@@ -48,11 +48,11 @@ const NavBar: React.FC = () => {
 
   const navLinks = [
     { href: "#home-section", label: "Home" },
-    { href: "#tech-stack-section", label: "Tech Stack" },
-    { href: "#resume-section", label: "Resume" },
-    { href: "#about-section", label: "About" },
     { href: "#project-section", label: "Projects" },
-    { href: "#contact-section", label: "Contact Me" },
+    { href: "#resume-section", label: "Resume" },
+    { href: "#tech-stack-section", label: "Skills" },
+    { href: "#about-section", label: "About" },
+    { href: "#contact-section", label: "Contact" },
   ];
 
   return (

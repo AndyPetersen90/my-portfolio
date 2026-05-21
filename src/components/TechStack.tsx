@@ -1,130 +1,60 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+type SkillGroup = {
+  title: string;
+  description: string;
+  skills: string[];
+};
+
+const skillGroups: SkillGroup[] = [
+  {
+    title: "Frontend",
+    description: "Clear, responsive interfaces that are easy to use and maintain.",
+    skills: ["React", "TypeScript", "Tailwind CSS", "Material UI", "HTML", "CSS"],
+  },
+  {
+    title: "Backend",
+    description: "Application logic, APIs, and services that support real workflows.",
+    skills: ["Node.js", "Express", "Python", "Prisma", "REST APIs"],
+  },
+  {
+    title: "Data",
+    description: "Structured data storage and practical data access patterns.",
+    skills: ["PostgreSQL", "MongoDB", "SQL", "Database Design"],
+  },
+  {
+    title: "Cloud & Tools",
+    description: "Deployment, file storage, version control, and production support.",
+    skills: ["AWS S3", "AWS Lambda", "Vercel", "Git", "GitHub"],
+  },
+];
 
 function TechStackSection() {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 750,
-    slidesToShow: 10,
-    slidesToScroll: 1,
-    autoplay: true,
-    centerMode: true,
-    autoplaySpeed: 3500,
-    focusOnSelect: true,
-    responsive: [
-      {
-        breakpoint: 1800,
-        settings: {
-          slidesToShow: 8,
-        },
-      },
-      {
-        breakpoint: 1350,
-        settings: {
-          slidesToShow: 6,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 5,
-        },
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-    ],
-  };
-
-  const icons = [
-    {
-      name: "React",
-      url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-    },
-    {
-      name: "HTML5",
-      url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-    },
-    {
-      name: "CSS3",
-      url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-    },
-    {
-      name: "Javascript",
-      url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-    },
-    {
-      name: "NodeJs",
-      url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-    },
-    {
-      name: "PostgressSQL",
-      url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-    },
-    {
-      name: "Git",
-      url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-    },
-    {
-      name: "Github",
-      url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-      className: "bg-white rounded-lg",
-    },
-    {
-      name: "Typescript",
-      url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-    },
-    {
-      name: "MongoDB",
-      url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
-    },
-    {
-      name: "Express",
-      url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
-      className: "bg-white rounded-lg",
-    },
-    // {
-    //   name: "Postman",
-    //   url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
-    // },
-    {
-      name: "Material UI",
-      url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg",
-    },
-    {
-      name: "Tailwind",
-      url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-    },
-  ];
-
   return (
-    <section className="bg-black" id="tech-stack-section">
-      <h2 className="pt-[6vh] text-aliceblue text-center text-4xl mb-6">Tech Stack</h2>
-      <div className="flex flex-col justify-center pb-16 px-8 md:px-16">
-        <Slider {...settings}>
-          {icons.map((icon, index) => (
-            <div className="px-6" key={index}>
-              <img id="devicon" alt={icon.name} src={icon.url} className={`max-w-[140px] mx-auto ${icon.className || ""}`} />
-            </div>
+    <section className="bg-slate-950 px-4 py-16 sm:px-6 md:px-8 lg:px-12" id="tech-stack-section">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-12 text-center">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-blue-300">Skills</p>
+          <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl md:text-5xl">Tools I Use to Build Reliable Web Apps</h2>
+          <p className="mx-auto max-w-3xl text-lg leading-8 text-slate-300">
+            The goal is not to collect logos. The goal is to choose the right tools, keep the experience simple, and ship software people can depend
+            on.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
+          {skillGroups.map((group) => (
+            <article key={group.title} className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 shadow-xl shadow-black/10">
+              <h3 className="mb-3 text-2xl font-bold text-white">{group.title}</h3>
+              <p className="mb-5 text-sm leading-6 text-slate-300">{group.description}</p>
+              <div className="flex flex-wrap gap-2">
+                {group.skills.map((skill) => (
+                  <span key={skill} className="rounded-full border border-blue-300/20 bg-blue-300/10 px-3 py-1 text-sm font-medium text-blue-100">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </article>
           ))}
-        </Slider>
+        </div>
       </div>
     </section>
   );

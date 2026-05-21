@@ -1,8 +1,8 @@
 function FooterSection() {
   return (
-    <footer className="bg-grey-900 !text-black py-6 text-center">
-      <p>Built with love, caffeine, and the occasional bug fix. Don't worry, the bugs have been squashed... I think. 😅</p>
-      <p className="text-sm">© {new Date().getFullYear()} Andrew Petersen's Portfolio | Powered by HTML, CSS, and energy drinks</p>
+    <footer className="bg-white px-4 py-8 text-center">
+      <p className="mb-2 font-semibold !text-slate-900">Andrew Petersen | Full-Stack Software Engineer</p>
+      <p className="text-sm !text-slate-600">© {new Date().getFullYear()} Andrew Petersen. Built with React, TypeScript, and Tailwind CSS.</p>
     </footer>
   );
 }

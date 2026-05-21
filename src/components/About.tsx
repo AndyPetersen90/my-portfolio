@@ -27,7 +27,6 @@ function AboutSection() {
       { source: "./aboutMePhotos/me-coding.webp", alt: "Me Writing Coding" },
       { source: "./aboutMePhotos/me-dax-hiking.webp", alt: "Me and Dax hiking" },
       { source: "./aboutMePhotos/me-ziplining.webp", alt: "Me ziplining" },
-      { source: "./aboutMePhotos/tyson-w-rocket.", alt: "Tyson with his model rocket" },
       { source: "./aboutMePhotos/rocket-launch-station.webp", alt: "Homemade rocket launch station" },
       { source: "./aboutMePhotos/tyson-robotics.webp", alt: "tyson playing with robots" },
       { source: "./aboutMePhotos/tyson-trout.webp", alt: "tyson with his first trout catch" },
@@ -115,27 +114,60 @@ function AboutSection() {
   };
 
   return (
-    <section ref={sectionRef} className="bg-black w-full" id="about-section">
-      <h3 className="pt-[4vh] text-aliceblue text-center text-3xl">About Me</h3>
-      <div className="flex items-center justify-center pt-8 pb-16 px-8">
-        <div className="w-full text-center mb-12">
-          <p className="text-aliceblue text-[2vh] mb-6">
-            I'm a full-stack JavaScript developer with expertise in React, TypeScript, Node.js, and MongoDB, complemented by experience with
-            PostgreSQL, AWS S3, and Lambda. My focus is on crafting clean, maintainable code that solves real-world problems. Currently expanding my
-            backend skills with Python, I'm committed to continuous learning in this ever-evolving tech landscape.
-          </p>
-          <p className="text-aliceblue text-[2vh] mb-6">
-            My background in sales and technical support has given me a unique perspective on user needs and communication. This experience shapes my
-            development approach: I build for people, not just ideal use cases. I've created internal tools and web applications with a strong
-            emphasis on user-centered design and clear functionality.
-          </p>
-          <p className="text-aliceblue text-[2vh] mb-6">
-            When I'm not coding, you'll find me with my family, working on woodworking projects, or enjoying outdoor activities like fishing and
-            hiking. These interests help me maintain a balanced perspective and bring fresh creativity to my development work.
-          </p>
+    <section ref={sectionRef} className="bg-slate-950 px-4 py-16 sm:px-6 md:px-8 lg:px-12" id="about-section">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+          <div>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-blue-300">About</p>
+            <h2 className="mb-6 text-3xl font-bold text-white sm:text-4xl md:text-5xl">A Developer Who Understands People and Process</h2>
+            <div className="space-y-5 text-lg leading-8 text-slate-300">
+              <p>
+                I build full-stack web applications with a focus on clear user experiences, maintainable code, and practical business value. My work
+                includes internal tools, customer-facing forms, marketing sites, and interactive apps.
+              </p>
+              <p>
+                Before moving deeper into software engineering, I worked in sales and technical support. That background helps me ask better
+                questions, explain trade-offs clearly, and build software around real user needs instead of assumptions.
+              </p>
+              <p>
+                Outside of work, I spend time with my family, build woodworking projects, and get outdoors whenever I can. I like bringing that same
+                hands-on, problem-solving mindset into the software I build.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid gap-4">
+            <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6">
+              <h3 className="mb-2 text-xl font-bold text-white">What I Bring</h3>
+              <p className="text-slate-300">
+                A mix of engineering ability, customer empathy, and practical communication that helps teams turn messy problems into usable
+                products.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6">
+              <h3 className="mb-2 text-xl font-bold text-white">How I Work</h3>
+              <p className="text-slate-300">
+                I care about simple interfaces, clear ownership, steady improvement, and building features that are understandable after the first
+                version ships.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6">
+              <h3 className="mb-2 text-xl font-bold text-white">Current Focus</h3>
+              <p className="text-slate-300">
+                Deepening backend skills, improving system design judgment, and continuing to build software that solves grounded, everyday problems.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="flex flex-col justify-center pb-16 px-8 md:px-16">
+
+        <div className="mt-14 border-t border-white/10 pt-10">
+          <div className="mb-6 text-center">
+            <h3 className="mb-2 text-2xl font-bold text-white">A Little More Personal</h3>
+            <p className="mx-auto max-w-2xl text-slate-300">
+              A small photo reel keeps the site human without taking attention away from the professional work above.
+            </p>
+          </div>
+
         {/* Loading indicator */}
         {isVisible && imagesLoaded < Math.min(3, totalImages) && (
           <div className="text-center mb-4">
@@ -169,6 +201,7 @@ function AboutSection() {
             ))}
           </Slider>
         )}
+        </div>
       </div>
     </section>
   );

@@ -17,24 +17,12 @@ function App() {
       <div className="relative">
         <NavBar />
         <main>
-          <section id="home-section" className="dark">
-            <HomeSection />
-          </section>
-          <section id="tech-stack-section" className="dark">
-            <TechStackSection />
-          </section>
-          <section id="resume-section" className="light">
-            <ResumeSection />
-          </section>
-          <section id="about-section" className="dark">
-            <AboutSection />
-          </section>
-          <section id="project-section" className="light">
-            <ProjectsSection />
-          </section>
-          <section id="contact-section" className="dark">
-            <ContactMeSection />
-          </section>
+          <HomeSection />
+          <ProjectsSection />
+          <ResumeSection />
+          <TechStackSection />
+          <AboutSection />
+          <ContactMeSection />
         </main>
         <footer className="light">
           <FooterSection />
